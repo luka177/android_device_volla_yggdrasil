@@ -1,14 +1,14 @@
 [
   {
     "remote":      "github",
-    "repository":  "UMIDIGI-MT6763-Development/android_device_umidigi_breeze",
-    "target_path": "device/UMIDIGI/A5_Pro",
+    "repository":  "luka177/android_device_volla_yggdrasil",
+    "target_path": "device/volla/yggdrasil",
     "branch":      "master"
   },
   {
     "remote":      "github",
-    "repository":  "UMIDIGI-MT6763-Development/android_vendor_umidigi_breeze",
-    "target_path": "vendor/UMIDIGI/A5_Pro",
+    "repository":  "luka177/android_vendor_volla_yggdrasil",
+    "target_path": "device/volla/yggdrasil",
     "branch":      "master"
   },
     {

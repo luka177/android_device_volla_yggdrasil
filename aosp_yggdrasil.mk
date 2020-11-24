@@ -1,51 +1,45 @@
 #
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2019-2020 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := breeze
+PRODUCT_RELEASE_NAME := yggdrasil
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit from UMIDIGI A5 Pro device
-$(call inherit-product, device/UMIDIGI/A5_Pro/device.mk)
+# Inherit from yggdrasil device
+$(call inherit-product, device/volla/yggdrasil/device.mk)
 
-# Inherit some common Bliss Os stuff.
-$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+# Inherit some common PixelExperience stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := bliss_A5_Pro
-PRODUCT_DEVICE := A5_Pro
-PRODUCT_BRAND := UMIDIGI
-PRODUCT_MODEL := A5_Pro
-PRODUCT_MANUFACTURER := UMIDIGI
+PRODUCT_NAME := volla_yggdrasil
+PRODUCT_DEVICE := Volla Phone
+PRODUCT_BRAND := Hallo Welt System UG
+PRODUCT_MODEL := Volla
+PRODUCT_MANUFACTURER := Hallo Welt System UG
 
 # Product characteristics
 PRODUCT_AAPT_CONFIG := xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2280
+TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="A5_Pro" \
-    PRODUCT_NAME="A5_Pro" \
+    TARGET_DEVICE="Volla Phone" \
+    PRODUCT_NAME="yggdrasil" \
     PRIVATE_BUILD_DESC="sunfish-user 11 RP1A.201105.002 6869500 release-keys"
 
 # Fingerprint
 BUILD_FINGERPRINT := "google/sunfish/sunfish:11/RP1A.201105.002/6869500:user/release-keys"
-
-# Bliss
-export BLISS_BUILDTYPE=OFFICIAL
-TARGET_USES_LAWNCHAIR := true
-
-# GMS as per stock
-PRODUCT_GMS_CLIENTID_BASE := android-umidigi

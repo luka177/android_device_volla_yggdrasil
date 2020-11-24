@@ -1,14 +1,14 @@
 #!/bin/bash
 #
-# Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2018-2020 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 set -e
 
-DEVICE=A5_Pro
-VENDOR=UMIDIGI
+DEVICE=Volla Phone 
+VENDOR=Hallo Welt System UG
 
 INITIAL_COPYRIGHT_YEAR=2019
 

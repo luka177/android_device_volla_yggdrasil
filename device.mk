@@ -1,11 +1,11 @@
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2019-2020 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/UMIDIGI/A5_Pro/A5_Pro-vendor.mk)
+$(call inherit-product-if-exists, vendor/volla/yggdrasil/yggdrasil-vendor.mk)
 
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_props.mk
@@ -37,10 +37,8 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # Init cripts
 PRODUCT_PACKAGES += \
-    fstab.enableswap \
     init.mt6763.rc \
-    fstab.mt6763 \
-    init.safailnet.rc
+    fstab.mt6763 
 
 #Symbols
 PRODUCT_PACKAGES += \
