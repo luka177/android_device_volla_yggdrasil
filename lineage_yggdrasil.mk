@@ -20,11 +20,11 @@ $(call inherit-product, device/volla/yggdrasil/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := volla_yggdrasil
-PRODUCT_DEVICE := Volla Phone
-PRODUCT_BRAND := Hallo Welt System UG
-PRODUCT_MODEL := Volla
-PRODUCT_MANUFACTURER := Hallo Welt System UG
+PRODUCT_NAME := lineage_yggdrasil
+PRODUCT_DEVICE := yggdrasil
+PRODUCT_BRAND := Volla
+PRODUCT_MODEL := Phone
+PRODUCT_MANUFACTURER := Volla
 
 # Product characteristics
 PRODUCT_AAPT_CONFIG := xxhdpi

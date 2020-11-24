@@ -21,7 +21,7 @@ PRODUCT_MAKEFILES += \
     $(LOCAL_DIR)/lineage_yggdrasil.mk
 
 COMMON_LUNCH_CHOICES := \
-    yggdrasil-userdebug
+    aosp_yggdrasil-userdebug
 
 COMMON_LUNCH_CHOICES += \
-    yggdrasil-userdebug
+    lineage_yggdrasil-userdebug

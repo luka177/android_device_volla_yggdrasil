@@ -110,7 +110,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6763
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Soong
-PRODUCT_SOONG_NAMESPACES += vendor/UMIDIGI/A5_Pro
+PRODUCT_SOONG_NAMESPACES += vendor/volla/yggdrasil
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2019-06-05
