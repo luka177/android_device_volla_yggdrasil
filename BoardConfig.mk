@@ -63,7 +63,6 @@ TARGET_KERNEL_SOURCE := kernel/volla/mt6763
 TARGET_KERNEL_CONFIG := k63v2_64_bsp_defconfig
 KERNEL_TOOLCHAIN := $(PWD)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-BOARD_KERNEL_SEPARATED_DTBO := true
 NEED_KERNEL_MODULE_SYSTEM := true
 
 # Netd
