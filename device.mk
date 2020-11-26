@@ -35,12 +35,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
-# Init cripts
+# Init scripts
 PRODUCT_PACKAGES += \
     init.mt6763.rc \
     fstab.mt6763 
 
-#Symbols
+# Symbols
 PRODUCT_PACKAGES += \
     libshim_showlogo
 
