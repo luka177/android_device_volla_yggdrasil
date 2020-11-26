@@ -1,0 +1,32 @@
+[
+  {
+    "remote":      "github",
+    "repository":  "luka177/android_device_volla_yggdrasil",
+    "target_path": "device/volla/yggdrasil",
+    "branch":      "master"
+  },
+  {
+    "remote":      "github",
+    "repository":  "luka177/android_vendor_volla_yggdrasil",
+    "target_path": "device/volla/yggdrasil",
+    "branch":      "master"
+  },
+    {
+    "remote":      "github",
+    "repository":  "LineageOS/android_hardware_mediatek",
+    "target_path": "hardware/mediatek",
+    "branch":      "lineage-17.1"
+  },
+  {
+    "remote":      "github",
+    "repository":  "AgentFabulous/vendor_mediatek_hardware_telephony-ext",
+    "target_path": "vendor/mediatek/hardware/telephony-ext",
+    "branch":      "wip"
+  },
+  {
+    "remote":      "github",
+    "repository":  "PeterCxy/vendor_mediatek_hardware_interfaces",
+    "target_path": "vendor/mediatek/hardware/interfaces",
+    "branch":      "lineage-17.0"
+  }
+]
