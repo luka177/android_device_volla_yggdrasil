@@ -15,13 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_yggdrasil.mk
-
-PRODUCT_MAKEFILES += \
+    $(LOCAL_DIR)/aosp_yggdrasil.mk \
     $(LOCAL_DIR)/lineage_yggdrasil.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_yggdrasil-userdebug
-
-COMMON_LUNCH_CHOICES += \
+    aosp_yggdrasil-userdebug \
     lineage_yggdrasil-userdebug
