@@ -1,13 +1,6 @@
-## Android 10 build tree for:
-<p>
-<a href="https://github.com/LineageOS/android">
-  <img src="https://img.shields.io/badge/manifest-LineageOS-brightgreen" alt="Hadenix">
-</a>
-</p>
-
-This is a lightweight tree for building firmware with a built-in: stock kernel with official firmware. This tree does not include building a vendor, only a system.
-
-Volla Phone (codename: yggdrasil ) Privacy focused phone.
+(C) 2020 The LineageOS Project
+# Device configuration for the Volla Phone (yggdrasil)
+Volla Phone (codenamed _"yggdrasil"_) is an privacy-focused phone.
 
 ### Device specifications
 
