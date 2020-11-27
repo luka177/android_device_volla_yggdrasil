@@ -5,6 +5,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+ifeq ($(strip $(ROM_VENDOR_ID)),)
+ROM_VENDOR_ID := lineage
+endif
+
 # Release name
 PRODUCT_RELEASE_NAME := yggdrasil
 
@@ -16,8 +20,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from yggdrasil device
 $(call inherit-product, device/volla/yggdrasil/device.mk)
 
-# Inherit some common Lineage OS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common stuff.
+$(call inherit-product, vendor/$(ROM_VENDOR_ID)/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_yggdrasil
@@ -36,6 +40,7 @@ TEMPORARY_DISABLE_PATH_RESTRICTIONS  := true
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
