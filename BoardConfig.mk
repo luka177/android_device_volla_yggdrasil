@@ -108,3 +108,4 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # TEMP
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+TARGET_HAS_FUSEBLK_SEPOLICY_ON_VENDOR := true
