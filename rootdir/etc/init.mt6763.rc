@@ -1,5 +1,9 @@
 import /system/etc/init/init.safailnet.rc
 
+on early-init
+    modprobe -a -d /system/lib/modules/ wlan_drv_gen2.ko bt_drv.ko fmradio_drv.ko gps_drv.ko
+    echo 1 > /dev/wmtWifi
+
 on init
     # Override fingerprint
     setprop ro.build.fingerprint ${ro.vendor.build.fingerprint}
